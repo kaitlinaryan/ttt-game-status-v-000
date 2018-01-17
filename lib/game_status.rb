@@ -34,7 +34,7 @@ WIN_COMBINATIONS = [
     false
   end
 def full?(board)
-  WIN_COMBINATIONS.detect do |taken|
+  board.all? do |taken|
     taken == "X" || taken == "O"
   end
 end
