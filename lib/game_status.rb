@@ -56,13 +56,13 @@ end
 end
 #returns true if board has been won, draw or full
 
-def winner?(board)
+def winner(board)
   if won?(board) || position_1 == "X" && position_2 == "X" && position_3 == "X"
    return "X"
  elsif
    won?(board) || position_1 == "O" && position_2 == "O" && position_3 == "O"
    return "O"
- else 
+ else
    return nil
  end
  end
