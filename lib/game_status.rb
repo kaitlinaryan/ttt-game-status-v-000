@@ -48,3 +48,10 @@ def draw?(board)
 end
 #returns true if board is full but not won
 #returns false if board has not been won and board is not full
+
+def over?(board)
+if draw?(board) || won?(board) || full?(board)
+end
+#returns true if board has been won, draw or full
+
+  
