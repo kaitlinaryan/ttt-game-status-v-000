@@ -57,4 +57,5 @@ end
 def winner(board)
   if board[won?(boards).first]
     return WIN_COMBINATION
+  end
 end
