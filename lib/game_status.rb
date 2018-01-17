@@ -33,6 +33,7 @@ WIN_COMBINATIONS = [
   else
     false
   end
+
 def full?(board)
   board.all? do |taken|
     taken == "X" || taken == "O"
@@ -46,15 +47,12 @@ def draw?(board)
     return false
   end
 end
-#returns true if board is full but not won
-#returns false if board has not been won and board is not full
 
 def over?(board)
 if draw?(board) || won?(board) || full?(board)
   return true
   end
 end
-#returns true if board has been won, draw or full
 
 def winner(board)
    if !won?(board)
