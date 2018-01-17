@@ -55,7 +55,7 @@ if draw?(board) || won?(board) || full?(board)
 end
 
 def winner(board)
-  if board[won?(board).first]
-    return "X" "O"
+  if won?(board) != nil
+  board[won?(board).first]
   end
 end
