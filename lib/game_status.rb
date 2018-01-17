@@ -61,7 +61,7 @@ def winner(board)
      return nil
    elsif won?(board) || position_1 == "O" && position_2 == "O" && position_3 == "O"
      return "O"
-   if won?(board) || position_1 == "X" && position_2 == "X" && position_3 == "X"
+   else won?(board) || position_1 == "X" && position_2 == "X" && position_3 == "X"
      return "X"
    end
 end
