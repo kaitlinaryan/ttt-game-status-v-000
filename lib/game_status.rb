@@ -55,3 +55,11 @@ if draw?(board) || won?(board) || full?(board)
 end
 end
 #returns true if board has been won, draw or full
+
+def winner?(board)
+  if won?(board) || position_1 == "X" && position_2 == "X" && position_3 == "X"
+   return "X"
+ else
+   return "O"
+ end
+ end 
