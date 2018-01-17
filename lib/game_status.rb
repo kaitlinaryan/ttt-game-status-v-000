@@ -37,3 +37,4 @@ def full?(board)
   WIN_COMBINATIONS.detect do |taken|
     taken == "X" || taken == "O"
   end
+end
