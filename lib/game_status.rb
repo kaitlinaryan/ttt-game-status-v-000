@@ -38,3 +38,9 @@ def full?(board)
     taken == "X" || taken == "O"
   end
 end
+
+def draw?(board)
+  if full? = true || won? = false
+    return true
+  else full? = false || full? = false
+  end
