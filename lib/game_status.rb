@@ -65,4 +65,3 @@ def winner(board)
    if !won?(board)
      return nil
    end
-   end
