@@ -57,7 +57,7 @@ end
 def winner(board)
   if won?(board) != nil
   board[won?(board).first]
-else !won?(board)
+elsif !won?(board)
   return nil
   end
 end
