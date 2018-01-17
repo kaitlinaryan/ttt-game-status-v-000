@@ -55,7 +55,7 @@ if draw?(board) || won?(board) || full?(board)
 end
 
 def winner(board)
-  if won?(board) != nil
+  if won?(board) != false
   board[won?(board).first]
 elsif !won?(board)
   return nil
