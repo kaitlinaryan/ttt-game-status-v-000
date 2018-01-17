@@ -57,11 +57,7 @@ end
 #returns true if board has been won, draw or full
 
 def winner(board)
-    if won?(board) || position_1 == "X" && position_2 == "X" && position_3 == "X"
-     return "X"
-    if won?(board) || position_1 == "O" && position_2 == "O" && position_3 == "O"
-     return "O"
-   else !won?(board)
+   if !won?(board)
      return nil
    end
 end
